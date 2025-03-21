@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>invitation</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <style>
+    body{
+      padding: 0;
+      margin: 0;
+      
+    }
+      
+        .container {
+          position: relative; 
+          width: 100%;
+          height: 100%;
+
+          
+        }
+    
+        .bottom-image {
+
+          position: absolute; 
+          top: 236;
+          left: 51;
+          width: 100%;
+          object-fit: cover;
+          z-index: 1; 
+
+
+        }
+
+
+    .top-image {
+          position: absolute; 
+          top: 199px;  
+          left: 21px; 
+          width: 338px; 
+          height: 138px;
+          z-index: 2; 
+          opacity: 0;
+        }
+
+        .top-image-active {
+          position: absolute; 
+          top: 200px;  
+          left: 20px; 
+          width: 338px; 
+          height: 138px;
+          z-index: 2; 
+          opacity: 1; 
+    }
+
+    .video-container {
+          position: absolute; /* Абсолютное позиционирование */
+          top: 797px;  
+          left: 23px; 
+          width: 347px; 
+          height: 191px;      /* Высота */
+          z-index: 50;          /* Поверх других элементов */
+          overflow: hidden;   /* Обрезает видео, если оно выходит за границы */
+        }
+
+        .video-container video {
+          width: 100%;         /* Видео занимает всю ширину контейнера */
+          height: 100%;        /* Видео занимает всю высоту контейнера */
+          object-fit: cover; /* Заполняет контейнер, обрезая, если нужно */
+        }
+
+
+        .line1 {
+          position: absolute; 
+          top: 500px;  
+          left: -78px; 
+          width: 150%; 
+          height: 300px;
+          z-index: 2; 
+        }
+
+        .frame {
+          position: absolute; 
+          top: 793px;  
+          left: 19px; 
+          width: 355px; 
+          height: 200px;
+          z-index: 2; 
+        }
+
+        .line2 {
+          position: absolute; 
+          top: 780px;  
+          left: -120px; 
+          width: 2000px; 
+          height: 401px;
+          z-index: 5; 
+        }
+
+        .hunter-card {
+          position: absolute; 
+          top: 1200px;  
+          left: 20px; 
+          width: 403px; 
+          height: 558px;
+          z-index: 3; 
+        }
+
+        .info {
+          position: absolute; 
+          top: 1300px;  
+          left: 35px; 
+          width: 150px; 
+          height: 200px;
+          z-index: 4; 
+        }
+
+
+
+
+        .movement-area {
+      position: absolute; /* Создаем контекст для абсолютного позиционирования */
+      width: 481px;
+      height: 420px;
+      margin-top: 150;
+      margin-left: 118;
+      z-index: 3;
+    }
+
+        .image-button {
+        position: absolute;       /* Абсолютное позиционирование */
+        top: 307px;             /* Отступ от верха */
+        left: 135px;            /* Отступ слева */
+        width: 100px;           /* Ширина */
+        height: 24px;         /* Высота */
+        z-index: 3;             /* Поверх других элементов */
+        background: none;       /* Убираем фон кнопки */
+        border: none;          /* Убираем рамку кнопки */
+        cursor: pointer;        /* Меняем курсор при наведении */
+        padding: 0;             /* Убираем отступы */
+  }
+        .image-button:hover {
+         opacity: 0.8; /* Прозрачность при наведении */
+    }
+  
+  /* Стили для изображения внутри кнопки */
+  .image-button img {
+    width: 100%;           /* Изображение занимает всю ширину кнопки */
+    height: 100%;          
+
+  }
+
+
+
+
+      </style>
+    </head>
+    <body>
+
+      <div class="movement-area">
+        <button class="image-button">
+          <img src="IMG/button.png" alt="Кнопка">
+        </button>
+      </div>
+    
+      <div class="container">
+        <div class="video-container">
+      
+          <video controls width="302" height="198" autoplay loop muted playsinline>
+           <source src="VID/видево.mp4" type="video/mp4"> 
+          </video>
+        </div>
+
+        <img src="IMG/buttom-image.jpg" alt="" class="bottom-image">
+        <img src="IMG/window1.jpg" alt="" class="top-image-active">
+        <img src="IMG/window2.png" alt="" class="top-image">
+        <img src="IMG/window3.png" alt="" class="top-image">
+        <img src="IMG/window4.png" alt="" class="top-image">
+        <img src="IMG/window5.png" alt="" class="top-image">
+
+
+
+      
+        <img src="IMG/line1.png" alt="" class="line1">
+        <img src="IMG/frame.png" alt="" class="frame">
+        <img src="IMG/line2.png" alt="" class="line2">
+        <img src="IMG/hunter.png" alt="" class="hunter-card">
+        <img src="IMG/info.png" alt="" class="info">
+
+
+
+
+
+      <script src="JS/script.js"></script> 
+</html>
+
+
